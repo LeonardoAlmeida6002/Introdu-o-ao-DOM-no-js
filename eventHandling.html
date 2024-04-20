@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício DOM</title>
+</head>
+<body>
+    <div id="quadrado" style="width: 100px; height: 100px; background-color: red; transition: all 0.5s;"></div>
+
+    <script>
+        function moverQuadrado() {
+            let quadrado = document.getElementById('quadrado');
+            
+            quadrado.addEventListener("mouseover"); {
+                var estilo = window.getComputedStyle(quadrado);
+                var leftAtual = parseInt(estilo.left);
+                quadrado.style.left = (leftAtual + 100) + "px";
+
+
+            }
+            quadrado.addEventListener("mouseout")
+        }
+    </script>
+</body>
+</html>
